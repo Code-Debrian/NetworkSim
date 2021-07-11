@@ -1,0 +1,132 @@
+{
+    "nodes": [
+        {
+            "id": 0,
+            "max_qsize": 4,
+            "max_in_ports": 4,
+            "max_out_ports": 4,
+            "transmission_rate": 2,
+            "ip": "129.124.51.36",
+            "mac": "01-23-45-67-89-AB"
+        },
+        {
+            "id": 1,
+            "max_qsize": 10,
+            "max_in_ports": 20,
+            "max_out_ports": 4,
+            "transmission_rate": 4,
+            "ip": "129.174.40.61",
+            "mac": "F1-32-15-66-4B-AB"
+        },
+        {
+            "id": 2,
+            "max_qsize": 10,
+            "max_in_ports": 15,
+            "max_out_ports": 3,
+            "transmission_rate": 3,
+            "ip": "129.144.52.66",
+            "mac": "0E-A3-42-23-A9-4B"
+        },
+        {
+            "id": 3,
+            "max_qsize": 10,
+            "max_in_ports": 4,
+            "max_out_ports": 4,
+            "transmission_rate": 2,
+            "ip": "129.134.50.36",
+            "mac": "A1-D2-23-32-C2-0B"
+        },
+        {
+            "id": 4,
+            "max_qsize": 10,
+            "max_in_ports": 6,
+            "max_out_ports": 6,
+            "transmission_rate": 4,
+            "ip": "110.104.80.33",
+            "mac": "D2-62-4A-6C-49-BB"
+        },
+        {
+            "id": 5,
+            "max_qsize": 10,
+            "max_in_ports": 4,
+            "max_out_ports": 4,
+            "transmission_rate": 1,
+            "ip": "129.149.20.43",
+            "mac": "E1-2C-41-23-29-AF"
+        }
+    ],
+    "links": [
+        {
+            "prop_rate": 3,
+            "length": 10,
+            "source": 0,
+            "target": 1
+        },
+        {
+            "prop_rate": 4,
+            "length": 9,
+            "source": 0,
+            "target": 3
+        },
+        {
+            "prop_rate": 2,
+            "length": 11,
+            "source": 0,
+            "target": 5
+        },
+        {
+            "prop_rate": 1,
+            "length": 3,
+            "source": 1,
+            "target": 0
+        },
+        {
+            "prop_rate": 4,
+            "length": 32,
+            "source": 1,
+            "target": 2
+        },
+        {
+            "prop_rate": 13,
+            "length": 23,
+            "source": 2,
+            "target": 1
+        },
+        {
+            "prop_rate": 3,
+            "length": 5,
+            "source": 3,
+            "target": 0
+        },
+        {
+            "prop_rate": 3,
+            "length": 12,
+            "source": 3,
+            "target": 4
+        },
+        {
+            "prop_rate": 5,
+            "length": 23,
+            "source": 4,
+            "target": 3
+        },
+        {
+            "prop_rate": 23,
+            "length": 100,
+            "source": 4,
+            "target": 5
+        },
+        {
+            "prop_rate": 2,
+            "length": 4,
+            "source": 5,
+            "target": 0
+        },
+        {
+            "prop_rate": 4,
+            "length": 6,
+            "source": 5,
+            "target": 4
+        }
+    ]
+}
