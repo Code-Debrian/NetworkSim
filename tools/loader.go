@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/figueroacode/networksim/network"
+	"github.com/code-debrian/networksim/network"
 )
 
 func CreateNetworkFromFile(filename string) *network.Network {
