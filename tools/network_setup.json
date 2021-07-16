@@ -81,18 +81,6 @@
             "target": 0
         },
         {
-            "prop_rate": 4,
-            "length": 32,
-            "source": 1,
-            "target": 2
-        },
-        {
-            "prop_rate": 13,
-            "length": 23,
-            "source": 2,
-            "target": 1
-        },
-        {
             "prop_rate": 3,
             "length": 5,
             "source": 3,

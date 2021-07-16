@@ -27,14 +27,17 @@ func CreateNetworkFromFile(filename string) *network.Network {
 		net.Nodes = append(net.Nodes, network.Node(node))
 	}
 	// Create adjacency list
-	net.InitLinks(len(net.Nodes))
+	net.Init(len(net.Nodes))
 	for _, link := range jsonNetwork.Links {
-		net.Links[link.Source][link.Target] = network.Link{
+		// Get a slice of 1 node
+		nodeLink := network.Link{
 			PropogationRate: link.PropogationRate,
 			Length:          link.Length,
 			InTransit:       false,
 			Exists:          true,
+			Target:          link.Target,
 		}
+		net.Links[link.Source] = append(net.Links[link.Source], nodeLink)
 	}
 	return &net
 }
